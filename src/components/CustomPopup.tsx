@@ -258,7 +258,7 @@ const CustomPopup: React.FC<CustomPopupProps> = ({
       <PopupContainer 
         isDarkMode={isDarkMode} 
         type={type}
-        onClick={e => e.stopPropagation()} // Prevent closing when clicking inside
+        onClick={(e: React.MouseEvent) => e.stopPropagation()} // Prevent closing when clicking inside
       >
         <CloseButton isDarkMode={isDarkMode} onClick={onClose}>
           <CloseIcon />

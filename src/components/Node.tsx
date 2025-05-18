@@ -778,7 +778,7 @@ const Node: React.FC<NodeProps> = ({
           isDarkMode={isDarkMode}
           type={node.type || 'default'}
           formatting={node.formatting}
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e: React.MouseEvent) => e.stopPropagation()}
           onBlur={() => setIsEditing(false)}
           autoFocus
           onInput={handleCursorMove}
@@ -789,10 +789,11 @@ const Node: React.FC<NodeProps> = ({
           isDarkMode={isDarkMode}
           type={node.type || 'default'}
           formatting={node.formatting}
-          onClick={(e) => {
+          onClick={(e: React.MouseEvent) => {
             e.stopPropagation();
             setIsEditing(true);
           }}
+          
         >
           {getFormattedLines()}
         </FormattedText>

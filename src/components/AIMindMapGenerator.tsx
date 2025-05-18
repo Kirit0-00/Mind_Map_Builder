@@ -256,7 +256,7 @@ const AIMindMapGenerator: React.FC<AIMindMapGeneratorProps> = ({
 
   return (
     <ModalOverlay onClick={onClose}>
-      <ModalContent isDarkMode={isDarkMode} onClick={e => e.stopPropagation()}>
+      <ModalContent isDarkMode={isDarkMode} onClick={(e: React.MouseEvent) => e.stopPropagation()}>
         <ModalHeader>
           <Title>Generate Mind Map with AI</Title>
           <CloseButton onClick={onClose}>
@@ -309,7 +309,7 @@ const AIMindMapGenerator: React.FC<AIMindMapGeneratorProps> = ({
               <TextInput 
                 isDarkMode={isDarkMode}
                 value={content}
-                onChange={e => setContent(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setContent(e.target.value)}
                 placeholder="Enter text to generate a mind map. The more detailed your text, the better the mind map."
               />
             )}
@@ -318,7 +318,7 @@ const AIMindMapGenerator: React.FC<AIMindMapGeneratorProps> = ({
               <URLInput 
                 isDarkMode={isDarkMode}
                 value={content}
-                onChange={e => setContent(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setContent(e.target.value)}
                 placeholder="Enter a URL (e.g., https://example.com)"
               />
             )}
