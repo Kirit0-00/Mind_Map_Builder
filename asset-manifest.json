@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mind_map_builder/static/css/main.baac7019.css",
+    "main.js": "/mind_map_builder/static/js/main.9f466e6a.js",
+    "static/js/453.87dcbf04.chunk.js": "/mind_map_builder/static/js/453.87dcbf04.chunk.js",
+    "index.html": "/mind_map_builder/index.html",
+    "main.baac7019.css.map": "/mind_map_builder/static/css/main.baac7019.css.map",
+    "main.9f466e6a.js.map": "/mind_map_builder/static/js/main.9f466e6a.js.map",
+    "453.87dcbf04.chunk.js.map": "/mind_map_builder/static/js/453.87dcbf04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baac7019.css",
+    "static/js/main.9f466e6a.js"
+  ]
+}
